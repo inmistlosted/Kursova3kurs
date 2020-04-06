@@ -1,0 +1,6 @@
+projectKey=coursework:SonarTests
+serverUrl=http://localhost:9000
+serverVersion=7.9.3.33349
+dashboardUrl=http://localhost:9000/dashboard?id=coursework%3ASonarTests
+ceTaskId=AXFPCm0fh7xuwFJUvDIj
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXFPCm0fh7xuwFJUvDIj
