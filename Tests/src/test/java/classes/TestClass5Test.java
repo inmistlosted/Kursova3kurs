@@ -46,7 +46,7 @@ class TestClass5Test {
     }
 
     @Test
-    void method6() {
+    void method6() throws IOException {
         boolean done = testClass.method6("name", 0);
         assertTrue(done);
         ArrayList<TestClass3> list = testClass.method8();
@@ -56,7 +56,7 @@ class TestClass5Test {
     }
 
     @Test
-    void method7() {
+    void method7() throws IOException {
         boolean done = testClass.method6("name1", 0);
         assertTrue(done);
         done = testClass.method6("name2", 1);
@@ -70,7 +70,7 @@ class TestClass5Test {
     }
 
     @Test
-    void method8() {
+    void method8() throws IOException {
         boolean done = testClass.method6("name1", 0);
         assertTrue(done);
         done = testClass.method6("name2", 1);
@@ -149,7 +149,7 @@ class TestClass5Test {
     }
 
     @Test
-    void method15() {
+    void method15() throws IOException {
         boolean done = testClass.method6("name1", 0);
         assertEquals(true, done);
         done = testClass.method6("name2", 1);

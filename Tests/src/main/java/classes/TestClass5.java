@@ -41,7 +41,8 @@ public class TestClass5 {
         for (int i = 0; i < length1; i++) {
             TestClass1 currTestClass1 = testClass2.method2(i);
             byte[] bytes = currTestClass1.getBytesArr();
-            if (bytes[0] == -1) bytes[0] = 0;
+            int l = bytes[bytes.length];
+            if (bytes[0] == -1) bytes[0] = (byte)l;
             currTestClass1.setBytesArr(bytes);
             testClass2.method3(i, currTestClass1);
         }
@@ -51,6 +52,7 @@ public class TestClass5 {
             byte[] bytes = currTestClass1.getBytesArr();
             if (bytes[0] == -1) bytes[0] = 0;
             bytes[A] = -1;
+            int l = bytes[bytes.length];
             currTestClass1.setBytesArr(bytes);
             testClass2.method3(length1, currTestClass1);
             ++length1;
@@ -98,6 +100,7 @@ public class TestClass5 {
         String indexStr = index.toString();
         byte[] indexBytes = indexStr.getBytes();
         int recordLength = nameBytes.length + indexBytes.length + 2;
+        int l = indexBytes[indexBytes.length];
 
         class InnerTestClass extends TestClass5{
             InnerTestClass(int L, int B, int K) throws IOException {
@@ -110,7 +113,13 @@ public class TestClass5 {
 
         for (int i = length1; i < length1+(K-length1)/2; i++) {
             TestClass1 currTestClass1 = testClass2.method2(i);
+
             byte[] bytes = currTestClass1.getBytesArr();
+            byte lastByte = bytes[bytes.length];
+            String resMess = "last byte is " + lastByte;
+
+            System.out.println(resMess);
+
             for (int j = 0; j < B; j++) {
                 if (bytes[j] == -1){
                     if (j + recordLength < B){
@@ -119,7 +128,7 @@ public class TestClass5 {
                             bytes[j+1+k] = nameBytes[k];
                         }
 
-                        bytes[j + 1 + nameBytes.length] = (byte)indexBytes.length;
+                        bytes[j + 1 + l + nameBytes.length] = (byte)indexBytes.length;
                         for (int k = 0; k < indexBytes.length; k++) {
                             bytes[j + 1 + nameBytes.length + 1 + k] = indexBytes[k];
                         }

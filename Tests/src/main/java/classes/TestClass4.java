@@ -9,6 +9,10 @@ public class TestClass4 {
         this.Nums = nums;
     }
 
+    public TestClass4(int fileLengt){
+        this.fileLength = fileLength;
+    }
+
     public Integer[] getNums() {
         return Nums;
     }

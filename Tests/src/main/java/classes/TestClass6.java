@@ -118,4 +118,17 @@ public class TestClass6 {
         String result = new String(resultBytes, StandardCharsets.UTF_8);
         return result;
     }
+
+    private synchronized void method9() {
+        if (num < 5)
+            throw new IllegalStateException();
+        method5();
+        method6();
+    }
+
+    public synchronized void method10(TestClass6 test) {
+        if (test.getnum() >= 5) {
+            test.method9();
+        }
+    }
 }

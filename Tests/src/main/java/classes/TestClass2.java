@@ -12,6 +12,7 @@ public class TestClass2 {
     public TestClass2(int L, int B) throws IOException {
         FileInputStream fin = new FileInputStream("file1.txt");
         byte[] allBytes = fin.readAllBytes();
+        System.out.println(allBytes[allBytes.length]);
         if (allBytes.length == 0){
             ldisk = new ArrayList<>();
             for (int i = 0; i < L; i++) {
@@ -26,6 +27,7 @@ public class TestClass2 {
             for (int i = 0; i < L; i++) {
                 TestClass1 testClass1 = new TestClass1(B);
                 byte[] bytes = testClass1.getBytesArr();
+                int l = bytes[bytes.length];
                 for (int j = 0; j < B; j++) {
                     bytes[j] = allBytes[i * B + j];
                 }

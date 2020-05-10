@@ -13,6 +13,20 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -34,8 +48,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/views" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -48,11 +62,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Kursach\Tests\web\views" />
+      <recent name="D:\Kursach\Tests\src\main\java" />
       <recent name="D:\Kursach\SonarTests" />
       <recent name="D:\Kursach\SonarTests\src\test\java\classes" />
       <recent name="D:\Kursach\SonarTests\src\main\java\classes" />
-      <recent name="D:\Kursach\SonarTests\src\test\java" />
-      <recent name="D:\Kursach\SonarTests\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,6 +90,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestClass1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="classes" />
+      <option name="MAIN_CLASS_NAME" value="classes.TestClass1Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestClass7Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tests" />
       <extension name="coverage">
@@ -87,22 +116,6 @@
       <option name="PACKAGE_NAME" value="classes" />
       <option name="MAIN_CLASS_NAME" value="classes.TestClass7Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClass7Test.getMainList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="classes" />
-      <option name="MAIN_CLASS_NAME" value="classes.TestClass7Test" />
-      <option name="METHOD_NAME" value="getMainList" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,53 +148,6 @@
       <option name="MAIN_CLASS_NAME" value="classes.TestClass7Test" />
       <option name="METHOD_NAME" value="method3" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Tests" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Tests" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -265,22 +231,22 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestClass7Test.getMainList" />
       <item itemvalue="JUnit.TestClass7Test.method2" />
       <item itemvalue="JUnit.TestClass7Test.method3" />
       <item itemvalue="JUnit.TestClass7Test" />
       <item itemvalue="JUnit.All in SonarTests" />
+      <item itemvalue="JUnit.TestClass1Test" />
       <item itemvalue="Maven.Spotbugs" />
       <item itemvalue="Maven.SonarTests [sonar:sonar]" />
       <item itemvalue="Maven.SonarTests [clean...]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass1Test" />
         <item itemvalue="JUnit.All in SonarTests" />
         <item itemvalue="JUnit.TestClass7Test" />
         <item itemvalue="JUnit.TestClass7Test.method3" />
         <item itemvalue="JUnit.TestClass7Test.method2" />
-        <item itemvalue="JUnit.TestClass7Test.getMainList" />
       </list>
     </recent_temporary>
   </component>
@@ -300,6 +266,16 @@
       <workItem from="1585745344803" duration="7443000" />
       <workItem from="1585818569296" duration="18330000" />
       <workItem from="1586082015320" duration="7765000" />
+      <workItem from="1586182045721" duration="4232000" />
+      <workItem from="1586422259492" duration="358000" />
+      <workItem from="1586594689585" duration="597000" />
+      <workItem from="1586628177538" duration="601000" />
+      <workItem from="1586681496397" duration="598000" />
+      <workItem from="1586788039476" duration="568000" />
+      <workItem from="1586886387542" duration="590000" />
+      <workItem from="1586971805164" duration="595000" />
+      <workItem from="1589017659327" duration="16835000" />
+      <workItem from="1589101350203" duration="237000" />
     </task>
     <servers />
   </component>
